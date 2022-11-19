@@ -1,0 +1,59 @@
+<!-- Data Validation
+Data validation is the process of ensuring that user input is clean, correct, and useful.
+
+Typical validation tasks are:
+
+has the user filled in all required fields?
+has the user entered a valid date?
+has the user entered text in a numeric field?
+Most often, the purpose of data validation is to ensure correct user input.
+
+Validation can be defined by many different methods, and deployed in many different ways.
+
+Server side validation is performed by a web server, after input has been sent to the server.
+
+Client side validation is performed by a web browser, before input is sent to a web server. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="dc.css">
+
+</head>
+
+<body class="text-monospace" style="background-image:url('bc.jpg') ;">
+    <h1 style="background-color: gray; text-align: center;  ">&#128151;Register here for your courses&#128151;</h1>
+    <form  name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name" style="background-color: wheat;   ">
+            Name: <input type="text" name="fname" ><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="email"style="background-color: wheat;   ">
+            Email: <input type="email" name="femail" ><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="phone" style="background-color: wheat;  ">
+            Phone: <input type="phone" name="fphone" ><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="pass" style="background-color: wheat;   ">
+            Password: <input type="password" name="fpass" ><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="cpass" style="background-color: wheat;   ">
+            Confirm Password: <input type="password" name="fcpass" ><b><span class="formerror"></span></b>
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+
+    </form>
+</body>
+<script src="dj.js"></script>
+
+</html>
